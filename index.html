@@ -1152,7 +1152,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             e.preventDefault();
             // Add form submission logic here
             alert('Thank you for your interest! Our team will contact you shortly.');
-            gtag_report_conversion();
+            window.dataLayer.push({
+    event: 'demo_form_sumbitted'
+  });
         });
     </script>
 </div>
@@ -1462,7 +1464,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                 // Optional: Show success message
                 alert('Thank you for your interest! We will contact you soon.');
-                gtag_report_conversion();
+                window.dataLayer.push({
+    event: 'demo_form_sumbitted'
+  });
               });
 
               // Handle Newsletter Form submission
@@ -1480,7 +1484,9 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
                 // Optional: Show success message
                 alert('Thank you for subscribing to our newsletter!');
-                gtag_report_conversion();
+                window.dataLayer.push({
+    event: 'demo_form_sumbitted'
+  });
 
               });
             </script>
